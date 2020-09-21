@@ -6,9 +6,7 @@
     <meta charset="utf-8">
     <title>selectors</title>
     <style media="screen">
-        body{
-         
-        }
+
       container{
         margin: 3em;
         padding:3em;
@@ -23,6 +21,9 @@
         color: rgb(15, 49, 71);
         font-size: 2em;
         }
+      h3{
+        font-size: 1.5em;
+      }
         img{
             width:fit-content;
             height:fit-content;
@@ -32,18 +33,45 @@
         li{
           font-size: 1.5em;
           }
+      
     </style>
   </head>
   <body>
     <div class = "container">
     <h1 style="font-size: 3em;"><center>About Version Control</center></h1>
-    <h2>What is version control?</h2>
+    <h2>What is "Version control" system?</h2>
     <p>
-       Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. For the examples in this book, you will use software source code as the files being version controlled, though in reality you can do this with nearly any type of file on a computer.
+
+      <h3><em>Version control systems are a category of software tools that helps record changes to files by keeping a track of modifications done to the code.</em></h3>
+       If you are a graphic or web designer and want to keep every version of an image or layout (which you would most certainly want to), a Version Control System (VCS) is a very wise thing to use. It allows you to revert selected files back to a previous state, revert the entire project back to a previous state, compare 
+      changes over time, see who last modified something that might be causing a problem, who introduced an issue and when, and more. Using a VCS also generally means that if we screw things up or lose files, we can easily recover. In addition, we get all this for very little overhead.</p>
+  <p>
+    <h3>Use of Version Control System:</h3>
+
+      <ul>
+        <li>A repository: It can be thought as a database of changes. It contains all the edits and historical versions (snapshots) of the project.</li>
+        <li>Copy of Work (sometimes called as checkout): It is the personal copy of all the files in a project. You can edit to this copy, without affecting the work of others and you can finally commit your changes to a repository when you are done making your changes.</li>
+      <br>
+    <h3>Types of Version Control Systems:</h3>
+    <ul>
+      <li>
+      Local Version Control Systems </li>
+      <li>Centralized Version Control Systems</li>
+      <li>Distributed Version Control Systems</li>
+    </ul>
         
-        If you are a graphic or web designer and want to keep every version of an image or layout (which you would most certainly want to), a Version Control System (VCS) is a very wise thing to use. It allows you to revert selected files back to a previous state, revert the entire project back to a previous state, compare changes over time, see who last modified something that might be causing a problem, who introduced an issue and when, and more. Using a VCS also generally means that if you screw things up or lose files, you can easily recover. In addition, you get all this for very little overhead.</p>
+    </p>
+    <p>
+    <h2>Basic Git Commands -</h2><br>
+  <ol>
+    <li><h3>git commit:</h3><br>
+    Records the changes made to the files to a local repository. For easy reference, each commit has a unique ID.It’s best practice to include a message with each commit explaining the changes made in a commit. Adding a commit message helps to find a particular change or understanding the changes.</li>
+    <li><h3>git clone:</h3><br>To create a local working copy of an existing remote repository, use git clone to copy and download the repository to a computer. Cloning is the equivalent of git init when working with a remote repository. Git will create a directory locally with all files and repository history.</li>
+    <li><h3>git pull:</h3>To get the latest version of a repository run git pull. This pulls the changes from the remote repository to the local computer.</li>
+    <li><h3>git push:</h3>Sends local commits to the remote repository. git push requires two parameters: the remote repository and the branch that the push is for.</li>
+  </ol>
     
-    <p><h2>Basic Git Commands -</h2></p>
+    </p>
     <img src="git-flow-768x513.png">
     
     </div>
